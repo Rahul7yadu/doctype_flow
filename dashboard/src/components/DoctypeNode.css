@@ -1,0 +1,116 @@
+.doctype-node {
+  background-color: #ffffff;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  font-family: 'Inter', 'Roboto', sans-serif;
+  font-size: 12px;
+  min-width: 250px;
+  overflow: hidden;
+}
+
+.doctype-node.isolated {
+  border: 2px solid #ef4444; /* Tailwind red-500 */
+  background-color: #fef2f2; /* Tailwind red-50 */
+}
+
+.doctype-header {
+  background-color: #f3f4f6;
+  border-bottom: 1px solid #d1d5db;
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #111827;
+  text-align: center;
+}
+
+.doctype-node.isolated .doctype-header {
+  background-color: #fee2e2; /* Tailwind red-100 */
+  color: #7f1d1d; /* Tailwind red-900 */
+  border-bottom: 1px solid #fca5a5;
+}
+
+.doctype-fields {
+  display: flex;
+  flex-direction: column;
+}
+
+.doctype-field {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 15px;
+  border-bottom: 1px solid #f3f4f6;
+  position: relative;
+}
+
+.doctype-node.isolated .doctype-field {
+  border-bottom: 1px solid #fee2e2;
+}
+
+.doctype-field:last-child {
+  border-bottom: none;
+}
+
+.field-name {
+  color: #374151;
+  font-weight: 500;
+}
+
+.doctype-node.isolated .field-name {
+  color: #991b1b;
+}
+
+.field-type {
+  color: #6b7280;
+  font-size: 11px;
+}
+
+.doctype-node.isolated .field-type {
+  color: #b91c1c;
+}
+
+/* React Flow handles styling */
+.doctype-node .node-handle {
+  width: 8px;
+  height: 8px;
+  background-color: #6366f1;
+  border: 2px solid #ffffff;
+}
+
+.doctype-node.isolated .node-handle {
+  display: none; /* No handles needed if isolated really */
+}
+
+.doctype-node .field-handle {
+  width: 8px;
+  height: 8px;
+  background-color: #10b981;
+  border: 2px solid #ffffff;
+  right: -5px; /* Pull handle slightly outside */
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Child Table styles */
+.doctype-node.child-table {
+  border: 2px solid #3b82f6; /* blue-500 */
+  background-color: #eff6ff; /* blue-50 */
+}
+
+.doctype-node.child-table .doctype-header {
+  background-color: #dbeafe; /* blue-100 */
+  color: #1e3a8a; /* blue-900 */
+  border-bottom: 1px solid #93c5fd;
+}
+
+.doctype-node.child-table .doctype-field {
+  border-bottom: 1px solid #dbeafe;
+}
+
+.doctype-node.child-table .field-name {
+  color: #1e40af;
+}
+
+.doctype-node.child-table .field-type {
+  color: #1d4ed8;
+}

@@ -1,0 +1,36 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-03-27 00:46:21.170885",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "field_one",
+  "field_two"
+ ],
+ "fields": [
+  {
+   "fieldname": "field_one",
+   "fieldtype": "Data",
+   "label": "Field One"
+  },
+  {
+   "fieldname": "field_two",
+   "fieldtype": "Data",
+   "label": "Field Two"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-03-27 00:48:01.984960",
+ "modified_by": "Administrator",
+ "module": "Doctype Erd",
+ "name": "Child Doctype",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
